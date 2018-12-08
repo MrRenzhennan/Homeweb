@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "react",
+    ["es2015", { "modules": false }],
+    "stage-0"
+  ],
+  "plugins": [
+        ["transform-imports", {
+            "preact-material-components": {
+                "transform": "@preact-material-components/dist/index.js",
+                "preventFullImport": true
+            },
+            "lodash": {
+                "transform": "lodash/${member}",
+                "preventFullImport": true
+            }
+        }],
+        ["transform-react-jsx", { "pragma":"h" }]
+        ,["transform-runtime"]
+    
+    ]
+}

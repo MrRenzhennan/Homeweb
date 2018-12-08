@@ -1,0 +1,42 @@
+
+@media screen and (min-width: 800px) {
+  .patents .mdc-layout-grid__cell {
+	      margin:0;
+	      width:calc(25% - 3px);	      
+	 }	
+	.swiper-slide .p1 {
+		/* left:0px;
+		/* top:0px; 
+		position: absolute; */
+	}
+	.header .mdc-toolbar__section{
+		top:0px;
+	}
+	.patents{
+		overflow: hidden;;
+	}
+	/* .pp1{
+		top: 30%;
+	} */
+	body{
+		overflow-x:hidden !important;		
+	}
+}
+
+.sa-item .t1{
+	width: 14vw;
+	left:0px;
+	text-align: center;
+}
+
+.sa-item .t2{
+	width: 14vw;
+	left:0px;
+	text-align: center;
+}
+
+body
+{
+	-ms-zoom: 1 !important;
+	zoom:1!important;
+}

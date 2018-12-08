@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "outDir": "dist",
+        "jsx": "react",
+        "jsxFactory": "h",
+        "allowJs":true,
+        "lib": [
+            "dom",
+            "es2015"
+        ]
+    },
+    "exclude": [
+            "node_modules"
+            //"dist"
+          ]
+    ,
+    "awesomeTypescriptLoaderOptions": {
+        "useBabel":true
+    }
+}

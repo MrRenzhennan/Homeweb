@@ -1,0 +1,198 @@
+@function get-vw($target) {
+  $vw-context: (1366*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+
+.sl-bg{
+  width: auto;
+  height: get-vw(518px);
+  text-align: center;
+  overflow:hidden;
+  color: #fff;
+  .sl-bg-title{
+    padding-top: get-vw(180px);
+    padding-bottom: get-vw(76px);
+    font-size: get-vw(56px);
+  }
+  .sl-bg-detail{
+    font-size: get-vw(20px);
+  }
+}
+.dzsp{
+  background: url("../../imgs/dazongshangpin.png") no-repeat;
+  background-size: 100% 100%;
+}
+.nyhy{
+  background: url("../../imgs/nengyuanhangye.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+@function phonevw($target) {
+  $vw-context: (375*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+$break-small: 640px;
+
+.sl-ci{
+  background: rgb(247, 247, 247);
+  padding:get-vw(80px) 0;
+  .sl-ci-title{
+    text-align: center;
+    font-size: get-vw(28px);
+    color: #28292d;
+  }
+  .sl-sub-title{
+    text-align: center;
+    font-size: get-vw(17px);
+    color: #aaa;
+    // padding:get-vw(20px) 0;
+    padding-bottom:get-vw(40px);
+    padding-top:0;
+  }
+  .sl-sub-titles{
+    text-align: center;
+    font-size: get-vw(17px);
+    color: #aaa;
+    padding-bottom:get-vw(20px);
+    padding-top:0;
+  }
+  .sl-sub-detail{
+    text-align: center;
+    font-size:get-vw(17px);
+    @media screen and (max-width: $break-small) {
+      font-size:phonevw(9px);
+    }
+    color: #ccc;
+  }
+  .sl-ci-detail{
+    padding:0 get-vw(222px);
+    text-indent: get-vw(28px);
+    font-size: get-vw(14px);
+    color: #282828;
+  }
+}
+.sl-item{
+  padding:get-vw(60px) 0;
+  .mdc-layout-grid {
+    padding:0 get-vw(125px);
+    .text-detail{
+      padding: get-vw(50px);
+
+      .title{
+        color: rgb(1, 1, 1);
+        padding-bottom:get-vw(100px);
+        font-size: get-vw(30px);
+      }
+      .detail{
+        font-size: get-vw(16px);
+        color: rgb(118, 118, 118);
+      }
+    }
+    .text-img1{
+      background: url("../../imgs/solution1.png") no-repeat;
+      background-size: 100% 100%;
+      width: get-vw(350px);
+      height: get-vw(350px);
+      margin: 0 auto;
+    }
+    .text-img2{
+      background: url("../../imgs/solution2.png") no-repeat;
+      background-size: 100% 100%;
+      width: get-vw(350px);
+      height: get-vw(350px);
+      margin: 0 auto;
+    }
+    .text-img3{
+      background: url("../../imgs/solution3.png") no-repeat;
+      background-size: 100% 100%;
+      width: get-vw(350px);
+      height: get-vw(350px);
+      margin: 0 auto;
+    }
+    .text-img4{
+      background: url("../../imgs/solution4.png") no-repeat;
+      background-size: 100% 100%;
+      width: get-vw(350px);
+      height: get-vw(350px);
+      margin: 0 auto;
+    }
+    .text-img5{
+      background: url("../../imgs/solution5.png") no-repeat;
+      background-size: 100% 100%;
+      width: get-vw(350px);
+      height: get-vw(350px);
+      margin: 0 auto;
+    }
+  }
+}
+
+
+@function phonevw($target) {
+  $vw-context: (375*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+$break-small: 640px;
+$break-large: 1023px;
+
+@media screen and (max-width: $break-small) {
+  .sl-bg {
+    height:60vw;
+    .sl-bg-title{
+      font-size:phonevw(32px);
+      line-height:40vw;
+    }
+  }
+  .sl-ci {
+    .sl-ci-title{
+      font-size:phonevw(18px);
+    }
+    .sl-sub-title{
+      font-size:phonevw(16px);
+    }
+    .sl-sub-titles{
+      font-size:phonevw(16px);
+    }
+    .sl-ci-detail{
+       font-size:phonevw(16px);
+    }
+  }
+  .sl-item .mdc-layout-grid .text-detail {
+    .title{
+      padding-bottom: phonevw(13px);
+      font-size: phonevw(16px);
+    }
+    .detail{
+       font-size:phonevw(15px);
+    }
+  }
+  .sl-item .mdc-layout-grid .text-img1{
+      width: 50vw;
+      height: 50vw;
+      opacity: 0.2;
+  }
+
+  .sl-item .mdc-layout-grid .text-img2
+  {
+      width: 50vw;
+      height: 50vw;
+      opacity: 0.2;
+  }
+  .sl-item .mdc-layout-grid .text-img4{
+    width: 50vw;
+      height: 50vw;
+      opacity: 0.2;
+  }
+  .sl-item .mdc-layout-grid .text-img3{
+    width: 50vw;
+      height: 50vw;
+      opacity: 0.2;
+  }
+
+  .sl-item .mdc-layout-grid .text-img5{
+    width: 50vw;
+      height: 50vw;
+      opacity: 0.2;
+  }
+
+}

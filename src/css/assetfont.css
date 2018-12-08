@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'assetfont'; /*a name to be used later*/
+    src:  url('../fonts/assetfont.eot?j00');
+    src:  url('../fonts/assetfont.eot?j00#iefix') format('embedded-opentype'),
+    url('../fonts/assetfont.ttf?j00') format('truetype'),
+    url('../fonts/assetfont.woff?j00') format('woff'),
+    url('../fonts/assetfont.svg?j00#asset') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

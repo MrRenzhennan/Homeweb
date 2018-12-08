@@ -1,0 +1,88 @@
+@media only screen and (max-width: 700px) {
+	.blocksdn .sdn-header {
+		min-width:0;
+		nav ul {
+			padding: 0;
+			display: none;
+			/*margin-top: 40px;*/
+			background: rgb(238,238,238);
+			width: 150px;
+		}
+		// .menu{
+		// 	display: block;
+		// 	position: fixed;
+		// 	top:10px;
+		// 	right: 20px;
+		// }
+		nav ul li {
+			float: none;
+			width: 100px;
+			margin: 0 auto;
+		}
+		nav ul li:not(:last-child) {
+			border-bottom: 1px solid #999;
+		}	
+		nav ul li a{
+			padding: 5px 10px;
+			font-size: 12px;
+			color: #333;
+		}
+		nav ul li a.register{
+			border: 0;
+		}
+		.banner-item.item-default h1{
+			font-size: 30px;
+			letter-spacing: 20px;
+			text-align: center;
+		}
+		/*介绍*/
+	}
+	.blocksdn {
+		p{
+			font-size: 14px;
+		}
+		.indro{
+			width: 100%
+		}
+		.foot-contact p{
+			font-size: 16px;
+		}
+	}
+}
+@media only screen and (max-width: 600px) {
+	.blocksdn{
+		h2 {
+			font-size: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.sdn-header,#banner {
+			height: 50vh;
+		}
+		.open-servcie button {
+			height: 40px;
+		}
+		.banner-item.item-default h1{
+			font-size: 30px;
+			letter-spacing: 4px;
+			text-align: center;
+		}
+		.unslider-arrow{
+			display: none;
+		}
+		.banner-item2>div{
+			width: 100%;
+			padding-top: 20px;
+			padding-right: 0px;
+		}
+		.banner-item2 .banner-item2-title h1{
+			font-size: 30px;
+			text-align: center;
+		}
+		.sdn-header .banner-item.item-default h1{
+			font-size: 30px;
+			letter-spacing: 15px;
+			text-align: center;
+		}
+	}
+}	

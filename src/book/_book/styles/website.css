@@ -1,0 +1,9 @@
+li:last-child .gitbook-link{
+    display:none !important;
+}
+.divider{
+    display:none !important;
+}
+/* .summary>li:first-child {
+    display: none;
+} */

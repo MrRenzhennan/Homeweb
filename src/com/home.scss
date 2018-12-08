@@ -1,0 +1,362 @@
+// swiper
+.home-main {
+  .swiper-button-prev,.swiper-button-next {
+    background-image: none;
+    top: 35%;
+    transition: 0.3s linear;
+  }
+  @media screen and (max-width: 640px) {
+    .swiper-button-prev,.swiper-button-next {
+      display: none;
+    }
+  }
+}
+.unslider-arrow i {
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+.unslider-arrow span{
+	display: block;
+	color: #fff;
+}
+.unslider-arrow .arrow-text{
+  font-size: 14px;
+	direction: down;
+	margin: 24px 0 14px 0;
+	-ms-transform: rotateZ(-90deg);
+	-moz-transform: rotateZ(-90deg);
+	-webkit-transform: rotateZ(-90deg);
+	transform: rotateZ(-90deg);
+	transform: rotate(-90deg);
+}
+.unslider-arrow .arrow-line{
+	width: 2px;
+	height: 12px;
+	background: #fff;
+	margin: 0 auto;
+}
+.home-product {
+  width: 80%;
+  min-width:320px;
+  margin: 0 auto;
+  margin-top: -220px;
+  position: relative;
+  z-index: 10;
+  .product-item {
+    background: rgb(69, 103, 175);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:borde-box;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    width: 33%;
+    min-width: 300px;
+    float: left;
+    color: #fff;
+    transition: 0.3s linear;
+    cursor: default;
+    &.item-special{
+      background: url(../imgs/home-pro1.png) no-repeat;
+      background-size: 100% 100%;
+    }&.item-share{
+      background: url(../imgs/home-pro2.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    &.item-protect{
+      background: url(../imgs/home-pro3.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    h1{
+      font-size: 80px;
+    }
+    h5{
+      font-size: 24px;
+      padding: 30px 0 40px 0;
+    }
+    p{
+      text-align: center;
+      font-size: 14px;
+      height: 160px;
+      line-height: 1.8em;
+    }
+    div a{
+      text-decoration: underline;
+      color:#fff;
+      float: right;
+    }
+  }
+  .product-item.active {
+    -ms-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+.home-product-options {
+  padding: 80px 0;
+  ul {
+    width: 800px;
+    margin: 0 auto;
+    li {
+      width: 33.33%;
+      float: left;
+      text-align: center;
+      cursor: default;
+      i{
+        font-size: 45px;
+        color: #666;
+      }
+      p {
+        font-size: 20px;
+        padding: 10px 0;
+        color: #282828;
+      }
+    }
+  }
+}
+@mixin team-member {
+  height: 150px;
+  background-size: 100px 120px;
+  background-position: center center;
+}
+//团队介绍
+.team {
+  // background: url(../imgs/team_bg.png) no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  & *{
+    color:#282828;
+  }
+  .home-title {
+    .s1 {
+    }
+    .s2 {
+    }
+  }
+  .team-inner {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    .team-item {
+      width: 20%;
+      float: left;
+      box-sizing: border-box;
+      padding: 0 20px;
+      transition: 0.3s linear;
+      .team-member {
+        transition: 0.3s linear;
+      }
+      // &:hover {
+      //   transform: scale(1.2);
+      // }
+      .team-member-duty {
+        padding: 10px 0;
+      }
+      .team-member-indro{
+        font-size: 12px;
+        line-height: 1.6em;
+        letter-spacing: 1px;
+      }
+    }
+    .team-item:nth-child(1) .team-member {
+      background: url(../imgs/tian.png) no-repeat;
+      @include team-member;
+    }
+    .team-item:nth-child(2) .team-member {
+      background: url(../imgs/wu.png) no-repeat;
+      @include team-member;
+    }
+    .team-item:nth-child(3) .team-member {
+      background: url(../imgs/tan.png) no-repeat;
+      @include team-member;
+    }
+    .team-item:nth-child(4) .team-member {
+      background: url(../imgs/wang.png) no-repeat;
+      @include team-member;
+    }
+    .team-item:nth-child(5) .team-member {
+      background: url(../imgs/yan.png) no-repeat;
+      @include team-member;
+    }
+  }
+}
+.coretech {
+  padding-bottom: 40px;
+}
+//合作伙伴
+@mixin partner-item {
+  height: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.home-main {
+  .partner {
+    padding-bottom: 0;
+    background: #fff;
+  }
+}
+.partners {
+  background: #fff;
+  padding-bottom: 40px;
+  .partners-line1 {
+    width: 80%;
+    margin: 0 auto;
+    li {
+      width: 25%;
+      float: left;
+      @include partner-item;      
+    }
+  }
+  .partners-line2 {
+    width: 50%;
+    margin: 0 auto;
+    li {
+      width:33%;
+      float: left;
+      @include partner-item;
+    }
+  }
+  .partner-1 {
+    background-image: url(../imgs/a_qingyun.png);
+  }
+  .partner-2 {
+    background-image: url(../imgs/a_aliyun.png);
+  }
+  .partner-3 {
+    background-image: url(../imgs/a_tengxunyun.png);
+  }
+  .partner-4 {
+    background-image: url(../imgs/a_chinacache.png);
+  }
+  .partner-5 {
+    background-image: url(../imgs/a_jingdongyun.png);
+  }
+  .partner-6 {
+    background-image: url(../imgs/a_aws.png);
+  }
+  .partner-7 {
+    background-image: url(../imgs/a_yunyou.png);
+  }
+  // .partner-1:hover {
+  //   background-image: url(../imgs/a_qingyun_h.png);
+  // }
+  // .partner-2:hover {
+  //   background-image: url(../imgs/a_aliyun_h.png);
+  // }
+  // .partner-3:hover {
+  //   background-image: url(../imgs/a_tengxunyun_h.png);
+  // }
+  // .partner-4:hover {
+  //   background-image: url(../imgs/a_chinacache_h.png);
+  // }
+  // .partner-5:hover {
+  //   background-image: url(../imgs/a_jingdongyun_h.png);
+  // }
+  // .partner-6:hover {
+  //   background-image: url(../imgs/a_aws_h.png);
+  // }
+  // .partner-7:hover {
+  //   background-image: url(../imgs/a_yunyou_h.png);
+  // }
+
+}
+//资质
+.aptitude{
+  padding-bottom: 60px;
+  background: #fff;
+  ul {
+    width: 80%;
+    margin: 0 auto;
+    .aptitude-item {
+      width: 33%;
+      float: left;
+      font-size: 14px;
+      text-align: center;
+      p {
+        padding: 2px 8px;
+        color: #717171;
+        font-size: 14px;
+      }
+    }
+    li>div>div {
+      height: 140px;
+      margin-bottom: 10px;
+    }
+    .aptitude-1 > div {
+      background-image: url(../imgs/dca.png);
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center center;
+    }
+    .aptitude-2 > div{
+      background-image: url(../imgs/cbd.png);
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center center;
+    }
+    .aptitude-3 > div{
+      background-image: url(../imgs/ciaba.png);
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center center;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .home-product {
+    margin-top: 20px;
+    .product-item {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .home-product-options {
+    ul {
+      width: 100%;
+      li {
+        width:100%;
+        margin: 10px auto;
+        i{
+          font-size: 40px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .team {
+    .team-inner {
+      .team-item {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .partners {
+    .partners-line1,.partners-line2{
+      li {
+        width: 50%;
+        background-size: 100%;
+      }
+    }
+    .partners-line2 {
+      width: 80%;
+    }
+  }
+  .aptitude {
+    ul{
+      .aptitude-item  {
+        width: 100%;
+        margin: 0 auto;
+        div div {
+          background-size: 250px;
+        }
+      }
+    }
+  }
+}
